@@ -1,0 +1,32 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA6LEEEXD7E56MZM7K
+      secret-key: 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
+    region:
+      static: eu-west-1
+      auto: false
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: davidkstorage
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
