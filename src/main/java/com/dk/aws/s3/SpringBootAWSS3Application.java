@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootS3FileUploadDownloadApplication {
+public class SpringBootAWSS3Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootS3FileUploadDownloadApplication.class, args);
+        SpringApplication.run(SpringBootAWSS3Application.class, args);
     }
 
 }
